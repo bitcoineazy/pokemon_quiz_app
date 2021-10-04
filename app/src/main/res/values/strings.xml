@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PokemonTest</string>
+    <string name="test_pokemon">Тест на знание вселенной Pokémon</string>
+    <string name="rules">Ответь на все 10 вопросов и узнай свой уровень!</string>
+    <string name="question_1">1. Какой тип покемона присутствует в игре?</string>
+    <string name="question_2">2. Что едят покемоны?</string>
+    <string name="question_3">3. Какая злодейская организация охотилась на покемонов?</string>
+    <string name="question_4">4. Сколько всего покемонов было создано?</string>
+    <string name="question_5">5. Сколько эволюций у Иви?</string>
+    <string name="question_6">6. Как зовут главного героя аниме?</string>
+    <string name="question_7">7. Что означает слово "покемон"?</string>
+    <string name="question_8">8. Какой покемон всегда спит?</string>
+    <string name="question_9">9. Кто главная противоположность Пикачу?</string>
+    <string name="question_10">10. Что вдохновило автора на создание вселенной Pokémon?</string>
+    <string name="color">Цвет</string>
+    <string name="no_knowledge">Ничего не знаете</string>
+    <string name="beginner">Новичок</string>
+    <string name="intermediate">Любитель</string>
+    <string name="prof">Знаток</string>
+    <string name="veteran">Ветеран</string>
+    <string name="expert">Эксперт</string>
+    <string name="guru">Гуру</string>
+</resources>

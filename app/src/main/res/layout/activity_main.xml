@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pokeball" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/test_pokemon"
+            android:textColor="#212121"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/rules"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_1" />
+
+        <CheckBox
+            android:id="@+id/type_1"
+            style="@style/CheckBoxStyle"
+            android:text="Электрический" />
+
+        <CheckBox
+            android:id="@+id/type_2"
+            style="@style/CheckBoxStyle"
+            android:text="Призрачный" />
+
+        <CheckBox
+            android:id="@+id/type_3"
+            style="@style/CheckBoxStyle"
+            android:text="Стальной" />
+
+        <CheckBox
+            android:id="@+id/type_4"
+            style="@style/CheckBoxStyle"
+            android:text="Деревянный" />
+
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_2" />
+
+        <RadioGroup
+            android:id="@+id/releaseType_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/potato"
+                style="@style/RadioButtonStyle"
+                android:text="Картошку" />
+
+            <RadioButton
+                android:id="@+id/flower"
+                style="@style/RadioButtonStyle"
+                android:text="Цветы" />
+
+            <RadioButton
+                android:id="@+id/apricorn"
+                style="@style/RadioButtonStyle"
+                android:text="Априкорны" />
+
+            <RadioButton
+                android:id="@+id/human_food"
+                style="@style/RadioButtonStyle"
+                android:text="Человеческую пищу" />
+
+            <RadioButton
+                android:id="@+id/no_food"
+                style="@style/RadioButtonStyle"
+                android:text="Покемоны не едят" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_3" />
+
+        <RadioGroup
+            android:id="@+id/evil_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/team_1"
+                style="@style/RadioButtonStyle"
+                android:text="Команда Х" />
+
+            <RadioButton
+                android:id="@+id/team_2"
+                style="@style/RadioButtonStyle"
+                android:text="Стальные охотники" />
+
+            <RadioButton
+                android:id="@+id/team_R"
+                style="@style/RadioButtonStyle"
+                android:text="Команда R" />
+
+            <RadioButton
+                android:id="@+id/team_4"
+                style="@style/RadioButtonStyle"
+                android:text="Острые козырьки" />
+
+            <RadioButton
+                android:id="@+id/team_5"
+                style="@style/RadioButtonStyle"
+                android:text="1-ый батальон" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_4" />
+
+        <RadioGroup
+            android:id="@+id/amount_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/all_amount_1"
+                style="@style/RadioButtonStyle"
+                android:text="643" />
+
+            <RadioButton
+                android:id="@+id/all_amount_true"
+                style="@style/RadioButtonStyle"
+                android:text="894" />
+
+            <RadioButton
+                android:id="@+id/all_amount_3"
+                style="@style/RadioButtonStyle"
+                android:text="999" />
+
+            <RadioButton
+                android:id="@+id/all_amount_4"
+                style="@style/RadioButtonStyle"
+                android:text="256" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_5" />
+
+        <RadioGroup
+            android:id="@+id/ev_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/evo_1"
+                style="@style/RadioButtonStyle"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/evo_true"
+                style="@style/RadioButtonStyle"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/evo_3"
+                style="@style/RadioButtonStyle"
+                android:text="12" />
+
+            <RadioButton
+                android:id="@+id/evo_4"
+                style="@style/RadioButtonStyle"
+                android:text="4" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:fontFamily="sans-serif"
+            android:text="@string/question_6" />
+
+        <EditText
+            android:id="@+id/main_hero_tf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Имя"
+            android:inputType="textCapWords"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_7" />
+
+        <RadioGroup
+            android:id="@+id/meaning_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/meaning_1"
+                style="@style/RadioButtonStyle"
+                android:text="Покладистый монстр" />
+
+            <RadioButton
+                android:id="@+id/meaning_true"
+                style="@style/RadioButtonStyle"
+                android:text="Карманный монстр" />
+
+            <RadioButton
+                android:id="@+id/meaning_3"
+                style="@style/RadioButtonStyle"
+                android:text="Что-то связанное с поке?" />
+
+            <RadioButton
+                android:id="@+id/meaning_4"
+                style="@style/RadioButtonStyle"
+                android:text="Карманный деликатес" />
+        </RadioGroup>
+
+
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_8" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            app:srcCompat="@drawable/snorlax" />
+
+        <RadioGroup
+            android:id="@+id/snorlax_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/snorlax_true"
+                style="@style/RadioButtonStyle"
+                android:text="Снорлакс" />
+
+            <RadioButton
+                android:id="@+id/snorlax_2"
+                style="@style/RadioButtonStyle"
+                android:text="Райквазу" />
+
+            <RadioButton
+                android:id="@+id/snorlax_3"
+                style="@style/RadioButtonStyle"
+                android:text="Гастли" />
+
+            <RadioButton
+                android:id="@+id/snorlax_4"
+                style="@style/RadioButtonStyle"
+                android:text="Слоупок" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_9" />
+
+        <RadioGroup
+            android:id="@+id/pika_enemy_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/enemy_1"
+                style="@style/RadioButtonStyle"
+                android:text="Райчу" />
+
+            <RadioButton
+                android:id="@+id/enemy_true"
+                style="@style/RadioButtonStyle"
+                android:text="Мяут" />
+
+            <RadioButton
+                android:id="@+id/enemy_3"
+                style="@style/RadioButtonStyle"
+                android:text="Сквиртл" />
+
+            <RadioButton
+                android:id="@+id/enemy_4"
+                style="@style/RadioButtonStyle"
+                android:text="Бульбазавр" />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/question_10" />
+
+        <RadioGroup
+            android:id="@+id/inspiration_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/inspiration_1"
+                style="@style/RadioButtonStyle"
+                android:text="Ему нравилось ходить в зоопарк" />
+
+            <RadioButton
+                android:id="@+id/inspiration_2"
+                style="@style/RadioButtonStyle"
+                android:text="Он любил рыбачить" />
+
+            <RadioButton
+                android:id="@+id/inspiration_true"
+                style="@style/RadioButtonStyle"
+                android:text="Он любил собирать жуков в детстве" />
+
+        </RadioGroup>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="showResults"
+            android:text="Узнать результат"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>
