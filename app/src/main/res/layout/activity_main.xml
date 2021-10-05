@@ -339,6 +339,8 @@
             style="@style/QuizStyle"
             android:onClick="showResults"
             android:text="@string/results_button"
+            android:textColor="@color/white"
+            android:theme="@style/Button.Teal"
             android:layout_marginVertical="20dp"
             android:layout_gravity="center_horizontal"/>
 
