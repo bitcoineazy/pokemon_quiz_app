@@ -23,8 +23,8 @@ public class Results extends AppCompatActivity {
         player_rank = findViewById(R.id.rank);
         metrics = findViewById(R.id.metrics_iv);
         Intent intent = getIntent();
+        // Получаем значение из MainActivity
         int score = intent.getIntExtra("score", 0);
-
         Log.d("Score", "Score is: " + score);
 
         switch (score ) {
