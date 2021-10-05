@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        menu.setGroupVisible(R.id.menu_new_game, false);
+        menu.setGroupVisible(R.id.new_game_group, false);
         return super.onPrepareOptionsMenu(menu);
     }
 
