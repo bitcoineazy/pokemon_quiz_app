@@ -5,16 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Results extends AppCompatActivity {
+    TextView player_rank;
     TextView result_tv;
+    ImageView metrics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-        result_tv = (TextView) findViewById(R.id.result_tv);
+        result_tv = findViewById(R.id.result_tv);
+        player_rank = findViewById(R.id.rank);
+        metrics = findViewById(R.id.metrics_iv);
         Intent intent = getIntent();
         int score = intent.getIntExtra("score", 0);
 
@@ -22,27 +28,78 @@ public class Results extends AppCompatActivity {
 
         switch (score ) {
             case 0:
-                result_tv.setText(R.string.no_knowledge);
+                resultRookie();
+                break;
             case 10:
             case 20:
-                result_tv.setText(R.string.beginner);
+                resultBeginner();
+                break;
             case 30:
             case 40:
-                result_tv.setText(R.string.intermediate);
+                resultIntermediate();
+                break;
             case 50:
             case 60:
-                result_tv.setText(R.string.prof);
+                resultProf();
+                break;
             case 70:
             case 80:
-                result_tv.setText(R.string.veteran);
+                resultVeteran();
+                break;
             case 90:
-                result_tv.setText(R.string.expert);
+                resultExpert();
+                break;
             case 100:
-                result_tv.setText(R.string.guru);
+                resultMaster();
+                break;
         }
+    }
+    public void resultRookie() {
+        player_rank.setText(R.string.rookie_r);
+        result_tv.setText(R.string.rookie);
+        metrics.setImageResource(R.drawable.percent_0);
     }
 
     public void resultBeginner() {
+        player_rank.setText(R.string.beginner_r);
+        result_tv.setText(R.string.beginner);
+        metrics.setImageResource(R.drawable.percent_20);
+    }
 
+    public void resultIntermediate() {
+        player_rank.setText(R.string.intermediate_r);
+        result_tv.setText(R.string.intermediate);
+        metrics.setImageResource(R.drawable.percent_40);
+    }
+
+    public void resultProf() {
+        player_rank.setText(R.string.prof_r);
+        result_tv.setText(R.string.prof);
+        metrics.setImageResource(R.drawable.percent_60);
+    }
+
+    public void resultVeteran() {
+        player_rank.setText(R.string.veteran_r);
+        result_tv.setText(R.string.veteran);
+        metrics.setImageResource(R.drawable.percent_80);
+    }
+
+    public void resultExpert() {
+        player_rank.setText(R.string.expert_r);
+        result_tv.setText(R.string.expert);
+        metrics.setImageResource(R.drawable.percent_90);
+    }
+
+    public void resultMaster() {
+        player_rank.setText(R.string.master_r);
+        result_tv.setText(R.string.master);
+        metrics.setImageResource(R.drawable.percent_100);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+
+        return super.onCreateOptionsMenu(menu);
     }
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PokemonTest</string>
+    <string name="app_name">Pokemon Quiz</string>
     <string name="test_pokemon">Тест на знание вселенной Pokémon</string>
     <string name="rules">Ответь на все 10 вопросов и узнай свой уровень!</string>
     <string name="question_1">1. Какой тип покемона присутствует в игре?</string>
@@ -13,11 +13,19 @@
     <string name="question_9">9. Кто главная противоположность Пикачу?</string>
     <string name="question_10">10. Что вдохновило автора на создание вселенной Pokémon?</string>
     <string name="color">Цвет</string>
-    <string name="no_knowledge">Ничего не знаете</string>
-    <string name="beginner">Новичок</string>
-    <string name="intermediate">Любитель</string>
-    <string name="prof">Знаток</string>
-    <string name="veteran">Ветеран</string>
-    <string name="expert">Эксперт</string>
-    <string name="guru">Гуру</string>
+    <string name="rookie_r">Салага!</string>
+    <string name="beginner_r">Новичок!</string>
+    <string name="intermediate_r">Любитель!</string>
+    <string name="prof_r">Знаток!</string>
+    <string name="veteran_r">Ветеран!</string>
+    <string name="expert_r">Эксперт!</string>
+    <string name="master_r">Мастер</string>
+    <string name="rookie">Вы никогда не увлекались миром Pokémon или мало о нём слышали.</string>
+    <string name="beginner">Вы только начали увлекаться покемонами или друзья рассказывали о них</string>
+    <string name="intermediate">Вы смотрели покемонов по телевизору и уже интересуетесь их особенностями</string>
+    <string name="prof">Неплохо! Вы уже неплохо разбираетесь в покемонах</string>
+    <string name="veteran">Вы знаете о покемонах уже не первый год, круто!</string>
+    <string name="expert">Отлично! У вас большой запас знаний об этих карманных монстрах!</string>
+    <string name="master">Идеально! Вы ответили на все вопросы правильно. </string>
+    <string name="results_button">Узнать результат</string>
 </resources>

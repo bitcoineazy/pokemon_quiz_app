@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    android:background="@color/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,16 +14,17 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
             android:adjustViewBounds="true"
             android:src="@drawable/pokeball" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textStyle="bold"
             android:text="@string/test_pokemon"
             android:textColor="#212121"
             android:textSize="20sp" />
@@ -31,8 +32,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginHorizontal="16dp"
             android:fontFamily="sans-serif"
             android:text="@string/rules"
             android:textColor="#212121"
@@ -44,22 +44,22 @@
 
         <CheckBox
             android:id="@+id/type_1"
-            style="@style/CheckBoxStyle"
+            style="@style/QuizStyle"
             android:text="Электрический" />
 
         <CheckBox
             android:id="@+id/type_2"
-            style="@style/CheckBoxStyle"
+            style="@style/QuizStyle"
             android:text="Призрачный" />
 
         <CheckBox
             android:id="@+id/type_3"
-            style="@style/CheckBoxStyle"
+            style="@style/QuizStyle"
             android:text="Стальной" />
 
         <CheckBox
             android:id="@+id/type_4"
-            style="@style/CheckBoxStyle"
+            style="@style/QuizStyle"
             android:text="Деревянный" />
 
 
@@ -73,27 +73,27 @@
             android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/potato"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Картошку" />
 
             <RadioButton
                 android:id="@+id/flower"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Цветы" />
 
             <RadioButton
                 android:id="@+id/apricorn"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Априкорны" />
 
             <RadioButton
                 android:id="@+id/human_food"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Человеческую пищу" />
 
             <RadioButton
                 android:id="@+id/no_food"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Покемоны не едят" />
         </RadioGroup>
 
@@ -107,27 +107,27 @@
             android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/team_1"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Команда Х" />
 
             <RadioButton
                 android:id="@+id/team_2"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Стальные охотники" />
 
             <RadioButton
                 android:id="@+id/team_R"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Команда R" />
 
             <RadioButton
                 android:id="@+id/team_4"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Острые козырьки" />
 
             <RadioButton
                 android:id="@+id/team_5"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="1-ый батальон" />
         </RadioGroup>
 
@@ -142,22 +142,22 @@
 
             <RadioButton
                 android:id="@+id/all_amount_1"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="643" />
 
             <RadioButton
                 android:id="@+id/all_amount_true"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="894" />
 
             <RadioButton
                 android:id="@+id/all_amount_3"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="999" />
 
             <RadioButton
                 android:id="@+id/all_amount_4"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="256" />
         </RadioGroup>
 
@@ -172,22 +172,22 @@
 
             <RadioButton
                 android:id="@+id/evo_1"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="3" />
 
             <RadioButton
                 android:id="@+id/evo_true"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="8" />
 
             <RadioButton
                 android:id="@+id/evo_3"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="12" />
 
             <RadioButton
                 android:id="@+id/evo_4"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="4" />
         </RadioGroup>
 
@@ -218,22 +218,22 @@
 
             <RadioButton
                 android:id="@+id/meaning_1"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Покладистый монстр" />
 
             <RadioButton
                 android:id="@+id/meaning_true"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Карманный монстр" />
 
             <RadioButton
                 android:id="@+id/meaning_3"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Что-то связанное с поке?" />
 
             <RadioButton
                 android:id="@+id/meaning_4"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Карманный деликатес" />
         </RadioGroup>
 
@@ -246,6 +246,8 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
             android:layout_height="361dp"
             app:srcCompat="@drawable/snorlax" />
 
@@ -256,22 +258,22 @@
 
             <RadioButton
                 android:id="@+id/snorlax_true"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Снорлакс" />
 
             <RadioButton
                 android:id="@+id/snorlax_2"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Райквазу" />
 
             <RadioButton
                 android:id="@+id/snorlax_3"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Гастли" />
 
             <RadioButton
                 android:id="@+id/snorlax_4"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Слоупок" />
         </RadioGroup>
 
@@ -286,22 +288,22 @@
 
             <RadioButton
                 android:id="@+id/enemy_1"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Райчу" />
 
             <RadioButton
                 android:id="@+id/enemy_true"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Мяут" />
 
             <RadioButton
                 android:id="@+id/enemy_3"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Сквиртл" />
 
             <RadioButton
                 android:id="@+id/enemy_4"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Бульбазавр" />
 
 
@@ -318,25 +320,26 @@
 
             <RadioButton
                 android:id="@+id/inspiration_1"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Ему нравилось ходить в зоопарк" />
 
             <RadioButton
                 android:id="@+id/inspiration_2"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Он любил рыбачить" />
 
             <RadioButton
                 android:id="@+id/inspiration_true"
-                style="@style/RadioButtonStyle"
+                style="@style/QuizStyle"
                 android:text="Он любил собирать жуков в детстве" />
 
         </RadioGroup>
 
         <Button
-            style="@style/ButtonStyle"
+            style="@style/QuizStyle"
             android:onClick="showResults"
-            android:text="Узнать результат"
+            android:text="@string/results_button"
+            android:layout_marginVertical="20dp"
             android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
